@@ -1,7 +1,7 @@
 # ~/.bashrc
 # vim:set ft=sh sw=2 sts=2:
 
-source "$HOME/.hashrc"
+#source "$HOME/.hashrc"
 
 VISUAL=vim
 EDITOR="$VISUAL"
@@ -33,3 +33,5 @@ function parse_git_branch {
 export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$(parse_git_branch)$ "
 
 [ ! -f "$HOME/.bashrc.local" ] || . "$HOME/.bashrc.local"
+[ ! -f "$HOME/.alias.local" ] || . "$HOME/.alias.local"
+

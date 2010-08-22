@@ -4,7 +4,9 @@ if exists('g:loaded_pathogen')
 endif
 
 syntax on
+set hidden
 filetype plugin indent on
+set ruler
 
 augroup vimrc
   autocmd!
