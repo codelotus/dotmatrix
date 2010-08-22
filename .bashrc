@@ -35,3 +35,4 @@ export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$(par
 [ ! -f "$HOME/.bashrc.local" ] || . "$HOME/.bashrc.local"
 
 [ ! -f "$HOME/.alias.local" ] || . "$HOME/.alias.local"
+
