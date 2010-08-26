@@ -7,6 +7,7 @@ syntax on
 set hidden
 filetype plugin indent on
 set ruler
+colorscheme vividchalk
 
 augroup vimrc
   autocmd!
