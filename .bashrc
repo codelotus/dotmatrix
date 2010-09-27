@@ -3,6 +3,13 @@
 
 #source "$HOME/.hashrc"
 
+# Store 10,000 history entries
+export HISTSIZE=10000
+# Don't store duplicates
+export HISTCONTROL=erasedups
+# Append to history file
+shopt -s histappend
+
 VISUAL=vim
 EDITOR="$VISUAL"
 LESS="FRX"
@@ -14,6 +21,9 @@ export CLICOLOR=1
 export LSCOLORS=gxgxcxdxbxegedabagacad
 
 export CLICOLOR LSCOLORS
+
+bind '"\ep": history-search-backward'
+bind '"\en": history-search-forward'
 
 function parse_git_deleted {
   [[ $(git status 2> /dev/null | grep deleted:) != "" ]] && echo "-"

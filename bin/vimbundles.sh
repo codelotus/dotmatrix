@@ -24,7 +24,6 @@ get_bundle therubymug vim-pyte
 get_bundle tpope vim-abolish
 get_bundle tpope vim-cucumber
 get_bundle tpope vim-endwise
-get_bundle tpope vim-flatfoot
 get_bundle tpope vim-fugitive
 get_bundle tpope vim-git
 get_bundle tpope vim-haml
@@ -33,12 +32,12 @@ get_bundle tpope vim-pathogen
 get_bundle tpope vim-rake
 get_bundle tpope vim-ragtag
 get_bundle tpope vim-rails
-get_bundle vim-ruby vim-ruby
 get_bundle tpope vim-repeat
 get_bundle tpope vim-speeddating
 get_bundle tpope vim-surround
 get_bundle tpope vim-unimpaired
 get_bundle tpope vim-vividchalk
+get_bundle vim-ruby vim-ruby
 get_bundle wgibbs vim-irblack
 get_bundle scrooloose nerdtree
 get_bundle sjbach lusty
