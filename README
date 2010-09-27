@@ -2,7 +2,7 @@ My dot files based off of hashrockets and what I learned from peepcode's two "sm
 
 Note... (taken from http://gist.github.com/398996)
 If you are using rvm for to manage your rubies (as you should) and you want ruby interopt in macvim,
-grab this fork of macvim: http://github.com/koudelka/macvim and compile with the following options:
+you will need to compile macvim with the following options:
 ./configure --with-features=huge --enable-rubyinterp --with-macsdk=10.6 --with-macarchs=x86_64 --with-ruby-command=ruby
 this will use whatever rvm ruby is your --default
 
