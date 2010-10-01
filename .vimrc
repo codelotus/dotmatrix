@@ -6,7 +6,7 @@ endif
 
 syntax on
 filetype plugin indent on
-colorscheme vividchalk
+colorscheme topfunky-light
 " this is vim, don't worry about compatability with vi
 set nocompatible
 set modelines=0

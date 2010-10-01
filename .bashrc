@@ -55,3 +55,5 @@ fi
 
 [ ! -f "$HOME/.alias.local" ] || . "$HOME/.alias.local"
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
