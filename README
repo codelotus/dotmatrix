@@ -8,17 +8,4 @@ this will use whatever rvm ruby is your --default
 
 Two things remain to be done...
 1) grok .hashrc and personalize
-2) set up a way to automatically install FuzzyFinder
-
-== Steps to install Fuzzy Finder
-* Download fuzzy-finder 2.22.3
-* unzip its contents in the ~/.vim dir
-* gem install (global) fuzzy_file_finder -v=1.0.4
-* inside ~/.vim gem unpack fuzzy_file_finder
-* mkdir ~/.vim/ruby
-* cp fuzzy_file_finder-1.0.4/lib/fuzzy_file_finder.rb ruby
-* download github.com/airblade/fuzzyfinder_textmate/fuzzyfinder_textmate.vim
-* copy downloaded file to ~/.vim/plugin
-* add 'map <Leader>t :FuzzyFinderTextMate<Enter>' to .vimrc
-* in mvim \tFuzzyFinderTextMate to launch
 
