@@ -26,7 +26,6 @@ get_bitbucket_bundle() {
   )
 }
 
-get_github_bundle alowe vim-slurper
 get_github_bundle duff vim-bufonly
 get_github_bundle godlygeek tabular
 get_github_bundle leshill vim-json
@@ -54,6 +53,7 @@ get_github_bundle vim-ruby vim-ruby
 get_github_bundle wgibbs vim-irblack
 get_github_bundle scrooloose nerdtree
 get_github_bundle sjbach lusty
+get_github_bundle vim-scripts grails-vim
 get_bitbucket_bundle ns9tks vim-l9
 get_bitbucket_bundle ns9tks vim-fuzzyfinder
 
