@@ -53,6 +53,7 @@ get_github_bundle vim-ruby vim-ruby
 get_github_bundle wgibbs vim-irblack
 get_github_bundle scrooloose nerdtree
 get_github_bundle sjbach lusty
+get_github_bundle mattn jslint.vim
 get_github_bundle vim-scripts grails-vim
 get_bitbucket_bundle ns9tks vim-l9
 get_bitbucket_bundle ns9tks vim-fuzzyfinder
