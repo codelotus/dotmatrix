@@ -64,6 +64,13 @@ set colorcolumn=85
 "nnoremap j gj
 "nnoremap k gk
 
+" bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
 " map F1 to esc for the times I mistype
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
@@ -75,7 +82,21 @@ nnoremap ; :
 au FocusLost * :wa
 
 " strip all trailing whitespace from the file
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+" This funciton comes from: vimcasts.org/episodes/tidying-whitespace
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+nnoremap <leader>W :call <SID>StripTrailingWhitespaces()<CR>
+"nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
 nnoremap <leader>a :Ack
 " folding tag, useful when working with html
 nnoremap <leader>ft Vatzf
