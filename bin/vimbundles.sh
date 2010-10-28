@@ -50,6 +50,7 @@ get_github_bundle tpope vim-surround
 get_github_bundle tpope vim-unimpaired
 get_github_bundle tpope vim-vividchalk
 get_github_bundle vim-ruby vim-ruby
+get_github_bundle taq vim-rspec
 get_github_bundle wgibbs vim-irblack
 get_github_bundle scrooloose nerdtree
 get_github_bundle sjbach lusty
