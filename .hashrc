@@ -28,6 +28,8 @@ HASHROCKET_AUTHOR_CAMEROND="Cameron Daigle"
 HASHROCKET_AUTHOR_L4RK="Jon Larkowski"
 HASHROCKET_AUTHOR_LI0N="Mark Smith"
 HASHROCKET_AUTHOR_LESHILL="Les Hill"
+HASHROCKET_AUTHOR_JGDAVEY="Joshua Davey"
+HASHROCKET_AUTHOR_MATTONRAILS="Matthew Conway"
 HASHROCKET_AUTHOR_MATTSACKS="Matt Sacks"
 HASHROCKET_AUTHOR_NARWEN="Thais Camilo"
 HASHROCKET_AUTHOR_OBIE="Obie Fernandez"
@@ -52,7 +54,7 @@ hpair() {
   name=""
   email="dev"
   if [ -n "$ZSH_VERSION" ]; then
-    args=(${(i)@})
+    eval 'args=(${(i)@})'
   else
     args="`for arg in "$@"; do echo "x$arg"|sed -e 's/^x//'|tr ' ' _; done|sort -f`"
   fi
@@ -162,7 +164,7 @@ hclone() {
   hcd "$basename"
   if [ ! -f ".git/hooks/ctags" ]; then
     echo '#!/bin/sh' > .git/hooks/ctags
-    echo 'ctags -f .git/tags --exclude=.git --languages=-javascript,sql -R' >> .git/hooks/ctags
+    echo 'ctags --tag-relative -f .git/tags --exclude=.git --languages=-javascript,sql -R' >> .git/hooks/ctags
     chmod +x .git/hooks/ctags
     for basename in post-checkout post-commit post-merge; do
       echo '#!/bin/sh' > .git/hooks/$basename
