@@ -1,3 +1,31 @@
+# The following comes from:
+#   https://github.com/robbyrussell/oh-my-zsh
+
+# Path to your oh-my-zsh configuration.
+export ZSH=$HOME/.oh-my-zsh
+
+# Set to the name theme to load.
+# Look in ~/.oh-my-zsh/themes/
+export ZSH_THEME="robbyrussell"
+
+# Set to this to use case-sensitive completion
+# export CASE_SENSITIVE="true"
+
+# Comment this out to disable weekly auto-update checks
+# export DISABLE_AUTO_UPDATE="true"
+
+# Uncomment following line if you want to disable colors in ls
+# export DISABLE_LS_COLORS="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# The following was copied from:
+#   https://github.com/hashrocket/dotmatrix/blob/master/.zshrc
+
 path=(
   "$HOME/bin"
   /usr/local/bin
@@ -10,20 +38,6 @@ path=(
   /usr/X11/bin
 )
 
-# color term
-export CLICOLOR=1
-export LSCOLORS=Dxfxcxdxbxegedabadacad
-export ZLS_COLORS=$LSCOLORS
-export TERM=xterm
-export LC_CTYPE=en_US.UTF-8
-export LESS=FRX
-
-# make with the nice completion
-autoload -U compinit; compinit
-
-# make with the pretty colors
-autoload colors; colors
-
 # options
 setopt appendhistory autocd extendedglob histignoredups correctall nonomatch prompt_subst
 
@@ -31,17 +45,6 @@ setopt appendhistory autocd extendedglob histignoredups correctall nonomatch pro
 autoload edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line
-
-git_prompt_info() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "(${ref#refs/heads/})"
-}
-
-# prompt
-PROMPT='%{$fg_bold[green]%}%n@%m%{$reset_color%}:%{$fg_bold[cyan]%}%~%{$reset_color%}$(git_prompt_info)%# '
-
-# show non-success exit code in right prompt
-RPROMPT="%(?..{%{$fg[red]%}%?%{$reset_color%}})"
 
 # history
 HISTFILE=~/.zsh_history
@@ -68,21 +71,17 @@ alias lsd='ls -ld *(-/DN)'
 alias md='mkdir -p'
 alias rd='rmdir'
 alias cd..='cd ..'
-alias ..='cd ..'
 alias spec='spec -c'
 
-# hashrocket dev env
-export HASHROCKET_DIR="$HOME/hashrocket"
-
-# import the hashrocket rc file, if present
-hrc="$HASHROCKET_DIR/dotmatrix/.hashrc"
-[[ -a $hrc ]] && source $hrc
-
 # set cd autocompletion to commonly visited directories
-cdpath=(~ ~/src $DEV_DIR $HASHROCKET_DIR)
+cdpath=(~ ~/src)
 
-# load from Rubygems
-export RUBYOPT='rubygems'
+VISUAL=vim
+EDITOR="$VISUAL"
+LESS="FRX"
+RI="--format ansi -T"
+
+export VISUAL EDITOR LESS RI
 
 # rvm-install added line:
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
@@ -90,3 +89,4 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 # import local zsh customizations, if present
 zrcl="$HOME/.zshrc.local"
 [[ -a $zrcl ]] && source $zrcl
+
