@@ -8,7 +8,7 @@ load_oh_my_zsh() {
     cd "$1"
     git pull --rebase
   else
-    git clone https://github.com/robbyrussell/oh-my-zsh.git "$1"
+    git clone git@github.com:codelotus/oh-my-zsh.git "$1"
   fi
   )
 }
