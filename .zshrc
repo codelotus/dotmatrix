@@ -61,6 +61,7 @@ bindkey -e
 # aliases
 alias mv='nocorrect mv'       # no spelling correction on mv
 alias cp='nocorrect cp'
+alias htop='nocorrect htop'
 alias mkdir='nocorrect mkdir'
 alias bundle='nocorrect bundle'
 alias spec='nocorrect spec'
@@ -84,6 +85,7 @@ RI="--format ansi -T"
 export VISUAL EDITOR LESS RI
 
 # rvm-install added line:
+unsetopt auto_name_dirs
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 
 # import local zsh customizations, if present
