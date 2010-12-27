@@ -6,7 +6,7 @@ endif
 
 syntax on
 filetype plugin indent on
-colorscheme pyte
+colorscheme topfunky-light
 " this is vim, don't worry about compatability with vi
 set nocompatible
 set modelines=0
@@ -81,9 +81,14 @@ nnoremap k gk
 " bubble single lines
 nmap <C-Up> [e
 nmap <C-Down> ]e
+
 " bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+" Quickly edit/reload vimrc (from http://nvie.com/posts/how-i-boosted-my-vim)
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " map F1 to esc for the times I mistype
 inoremap <F1> <ESC>
