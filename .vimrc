@@ -6,7 +6,7 @@ endif
 
 syntax on
 filetype plugin indent on
-colorscheme topfunky-light
+colorscheme pyte
 " this is vim, don't worry about compatability with vi
 set nocompatible
 set modelines=0
@@ -26,13 +26,25 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
+set noerrorbells
 set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
 " show line numbers relative to current line
 set relativenumber
-set undofile
+
+set history=1000      " remember commands and search history
+set undolevels=1000
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title
+
+" Its not 1970, we don't need a swap file
+set nobackup
+set noswapfile
+
+set pastetoggle=<F2>
+
 
 " the following 2 remap lines makes vim's regex act like perl's
 nnoremap / /\v
@@ -61,8 +73,10 @@ set colorcolumn=85
 "inoremap <down> <nop>
 "inoremap <left> <nop>
 "inoremap <right> <nop>
-"nnoremap j gj
-"nnoremap k gk
+
+" natural movement of cursor between long lines
+nnoremap j gj
+nnoremap k gk
 
 " bubble single lines
 nmap <C-Up> [e
