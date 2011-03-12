@@ -11,7 +11,7 @@ colorscheme topfunky-light
 set nocompatible
 set modelines=0
 
-" tabs expand to 4 spaces
+" tabs expand to 2 spaces
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -140,3 +140,4 @@ augroup END
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
