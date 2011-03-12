@@ -56,9 +56,8 @@ get_github_bundle taq vim-rspec
 get_github_bundle wgibbs vim-irblack
 get_github_bundle scrooloose nerdtree
 get_github_bundle sjbach lusty
-get_github_bundle mattn jslint.vim
-get_github_bundle vim-scripts grails-vim
-get_github_bundle msanders snipmate.vim
+get_github_bundle wookiehangover jshint.vim
+get_github_bundle kchmck vim-coffee-script
 
 get_bitbucket_bundle ns9tks vim-l9
 get_bitbucket_bundle ns9tks vim-fuzzyfinder

@@ -65,6 +65,7 @@ alias htop='nocorrect htop'
 alias mkdir='nocorrect mkdir'
 alias bundle='nocorrect bundle'
 alias spec='nocorrect spec'
+alias spec='nocorrect htop'
 alias rspec='nocorrect rspec'
 alias ll="ls -l"
 alias l.='ls -ld .[^.]*'
