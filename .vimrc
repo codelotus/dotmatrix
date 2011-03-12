@@ -90,6 +90,12 @@ vmap <C-Down> ]egv
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+
+" tab buffers
+nmap <leader>T :tabnew<CR>
+nmap <C-Right> :tabn<CR>
+nmap <C-Left> :tabp<CR>
+
 " map F1 to esc for the times I mistype
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
