@@ -3,8 +3,8 @@
 	ci = commit
 	co = checkout
 	put = push origin head
-[branch]
-	autosetuprebase = always
+#[branch]
+#	autosetuprebase = always
 [color]
 	ui = auto
 [core]
