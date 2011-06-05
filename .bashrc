@@ -49,7 +49,7 @@ function parse_git_branch {
 
 [ -z "$PS1" ] || stty -ixon
 
-[ -z "$PS1" ] || export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$(parse_git_branch)\n$ "
+[ -z "$PS1" ] || export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$(parse_git_branch)\nλ "
 
 git_completion='/usr/local/Cellar/git/1.7*/etc/bash_completion.d/git-completion.bash'
 

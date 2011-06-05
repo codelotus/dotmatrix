@@ -131,6 +131,10 @@ nnoremap <leader>w <C-w>v<C-w>l
 " textmate fuzzy find
 nnoremap <leader>t :FufCoverageFile<CR>
 
+" Nerdtree
+nnoremap <leader>nt :NERDTreeToggle<CR>
+
+
 " easier navigation between window splits
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
