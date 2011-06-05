@@ -11,6 +11,8 @@
 	excludesfile = ~/.cvsignore
 	editor = vim
 	whitespace = warn
+	autocrlf = input
+	safecrlf = true
 [help]
 	autocorrect = 10
 [merge]
@@ -31,5 +33,5 @@
 [push]
 	default = tracking
 [user]
-	email = dev@hashrocket.com
-	name = "Hashrocket Workstation"
+	email = behmann@gmail.com
+	name = "Brian Ehmann"
