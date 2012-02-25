@@ -56,7 +56,8 @@ get_github_bundle taq vim-rspec
 get_github_bundle wgibbs vim-irblack
 get_github_bundle scrooloose nerdtree
 get_github_bundle sjbach lusty
-get_github_bundle wookiehangover jshint.vim
+#get_github_bundle wookiehangover jshint.vim
+get_github_bundle hallettj jslint.vim
 get_github_bundle kchmck vim-coffee-script
 get_github_bundle statianzo vim-jade
 get_github_bundle derekwyatt vim-scala
