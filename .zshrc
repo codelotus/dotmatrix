@@ -1,6 +1,9 @@
 # The following comes from:
 #   https://github.com/robbyrussell/oh-my-zsh
 
+# colors
+export TERM="xterm-256color"
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -10,7 +13,7 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="wizard"
 
 # Set to this to use case-sensitive completion
-# export CASE_SENSITIVE="true"
+export CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
 # export DISABLE_AUTO_UPDATE="true"
@@ -20,7 +23,7 @@ export ZSH_THEME="wizard"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git node npm ssh-agent vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
