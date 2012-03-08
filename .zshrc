@@ -86,6 +86,7 @@ VISUAL=vim
 EDITOR="$VISUAL"
 LESS="FRX"
 RI="--format ansi -T"
+DISABLE_AUTO_TITLE=true
 
 export VISUAL EDITOR LESS RI
 
@@ -96,4 +97,9 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 # import local zsh customizations, if present
 zrcl="$HOME/.zshrc.local"
 [[ -a $zrcl ]] && source $zrcl
+
+# tmux scripts if present
+tmux_sessions="$HOME/.tmux-sessions"
+[[ -a $tmux_sessions ]] && source $tmux_sessions
+
 

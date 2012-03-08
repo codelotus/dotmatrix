@@ -3,10 +3,15 @@ if exists('g:loaded_pathogen')
   call pathogen#runtime_prepend_subdirectories(expand('~/.vimbundles'))
 endif
 
+" auto read external changes to a file in focus
+" set autoread
+" let autoreadargs={'autoread':1}
+" execute WatchForChanges("*",autoreadargs)
+
 
 syntax on
 filetype plugin indent on
-colorscheme evening
+colorscheme vividchalk
 " this is vim, don't worry about compatability with vi
 set nocompatible
 set modelines=0
@@ -149,4 +154,7 @@ augroup END
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+" Scalairform integration
+au BufEnter *.scala setl formatprg=scala\ -cp\ /Library/scala/HOME/tools/scalariform_2.9.0-0.1.1.jar\ scalariform.commandline.Main\ -f
 
