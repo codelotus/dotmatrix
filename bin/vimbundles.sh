@@ -58,6 +58,7 @@ get_github_bundle scrooloose nerdtree
 get_github_bundle sjbach lusty
 get_github_bundle wookiehangover jshint.vim
 get_github_bundle kchmck vim-coffee-script
+get_github_bundle derekwyatt vim-scala
 
 get_bitbucket_bundle ns9tks vim-l9
 get_bitbucket_bundle ns9tks vim-fuzzyfinder

@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="random"
+export ZSH_THEME="wizard"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -93,3 +93,6 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 zrcl="$HOME/.zshrc.local"
 [[ -a $zrcl ]] && source $zrcl
 
+# import local alias, if present
+zalias="$HOME/.alias.local"
+[[ -a $zalias ]] && source $zalias
