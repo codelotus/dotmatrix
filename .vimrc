@@ -3,10 +3,15 @@ if exists('g:loaded_pathogen')
   call pathogen#runtime_prepend_subdirectories(expand('~/.vimbundles'))
 endif
 
+" auto read external changes to a file in focus
+" set autoread
+" let autoreadargs={'autoread':1}
+" execute WatchForChanges("*",autoreadargs)
+
 
 syntax on
 filetype plugin indent on
-colorscheme topfunky-light
+colorscheme vividchalk
 " this is vim, don't worry about compatability with vi
 set nocompatible
 set modelines=0
@@ -32,7 +37,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 " show line numbers relative to current line
-set relativenumber
+"  set relativenumber
 
 set history=1000      " remember commands and search history
 set undolevels=1000
@@ -60,9 +65,9 @@ nnoremap <leader><space> :noh<cr>
 
 " deal with long lines
 set wrap
-set textwidth=79
+" set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+"set colorcolumn=85
 
 " disable courser keys so I'm forced to use hjkl
 "nnoremap <up> <nop>
@@ -131,9 +136,8 @@ nnoremap <leader>w <C-w>v<C-w>l
 " textmate fuzzy find
 nnoremap <leader>t :FufCoverageFile<CR>
 
-" Nerdtree
+" toggle Nerd Tree
 nnoremap <leader>nt :NERDTreeToggle<CR>
-
 
 " easier navigation between window splits
 nnoremap <C-h> <C-w>h
@@ -150,4 +154,7 @@ augroup END
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+" Scalairform integration
+au BufEnter *.scala setl formatprg=scala\ -cp\ /Library/scala/HOME/tools/scalariform_2.9.0-0.1.1.jar\ scalariform.commandline.Main\ -f
 
