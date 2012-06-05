@@ -60,6 +60,7 @@ get_github_bundle hallettj jslint.vim
 get_github_bundle kchmck vim-coffee-script
 get_github_bundle statianzo vim-jade
 get_github_bundle derekwyatt vim-scala
+get_github_bundle ktvoelker sbt-vim
 
 get_bitbucket_bundle ns9tks vim-l9
 get_bitbucket_bundle ns9tks vim-fuzzyfinder
