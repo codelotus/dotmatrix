@@ -12,14 +12,15 @@ endif
 syntax on
 filetype plugin indent on
 colorscheme vividchalk
+"colorscheme topfunky-light
 " this is vim, don't worry about compatability with vi
 set nocompatible
 set modelines=0
 
-" tabs expand to 2 spaces
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+" tabs expand to 4 spaces
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 set encoding=utf-8
