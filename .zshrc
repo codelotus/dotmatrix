@@ -93,6 +93,10 @@ export VISUAL EDITOR LESS RI
 unsetopt auto_name_dirs
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 
+# import alias, if present
+zalias="$HOME/.alias"
+[[ -a $zalias ]] && source $zalias
+
 # import local zsh customizations, if present
 zrcl="$HOME/.zshrc.local"
 [[ -a $zrcl ]] && source $zrcl
