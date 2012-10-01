@@ -11,8 +11,12 @@ endif
 
 syntax on
 filetype plugin indent on
-colorscheme vividchalk
-"colorscheme topfunky-light
+" colorscheme vividchalk
+" colorscheme default
+" colorscheme evening
+" colorscheme inkpot
+" colorscheme topfunky-light
+colorscheme railscasts
 " this is vim, don't worry about compatability with vi
 set nocompatible
 set modelines=0

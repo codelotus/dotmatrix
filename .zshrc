@@ -9,7 +9,9 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="wizard"
+# export ZSH_THEME="wizard"
+# export ZSH_THEME="gentoo"
+export ZSH_THEME="jreese"
 
 # Set to this to use case-sensitive completion
 export CASE_SENSITIVE="true"
@@ -22,7 +24,7 @@ export CASE_SENSITIVE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git node npm ssh-agent vi-mode)
+plugins=(rvm git node npm ssh-agent vi-mode rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,4 +110,6 @@ zalias="$HOME/.alias.local"
 # tmux scripts if present
 tmux_sessions="$HOME/.tmux-sessions"
 [[ -a $tmux_sessions ]] && source $tmux_sessions
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
