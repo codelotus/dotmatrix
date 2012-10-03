@@ -28,7 +28,7 @@ plugins=(rvm git node npm ssh-agent vi-mode rails)
 
 source $ZSH/oh-my-zsh.sh
 
-# The following was copied from:
+# The following was inspired/partially copied from:
 #   https://github.com/hashrocket/dotmatrix/blob/master/.zshrc
 
 path=(
