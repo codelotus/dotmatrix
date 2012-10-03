@@ -139,7 +139,9 @@ nnoremap <leader>ft Vatzf
 nnoremap <leader>w <C-w>v<C-w>l
 
 " textmate fuzzy find
-nnoremap <leader>t :FufCoverageFile<CR>
+" nnoremap <leader>t :FufCoverageFile<CR>
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " toggle Nerd Tree
 nnoremap <leader>nt :NERDTreeToggle<CR>
