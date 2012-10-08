@@ -1,0 +1,5 @@
+" when dealing with encrypted files, disable plain text backup files
+set nobackup
+set noswapfile
+set nowritebackup
+
