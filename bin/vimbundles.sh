@@ -1,7 +1,9 @@
 #!/bin/bash
 
-mkdir -p ~/.vimbundles
-cd ~/.vimbundles
+DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+VIM_BUNDLES=$DIR/../.vimbundles
+mkdir -p $VIM_BUNDLES
+cd $VIM_BUNDLES
 
 get_github_bundle() {
   (
