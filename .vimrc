@@ -110,8 +110,6 @@ nmap <C-Left> :tabp<CR>
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
-" map ; to : so I don't have to hit the shift key to enter a command
-nnoremap ; :
 
 " auto save when vim loses focus (ya, its that useful)
 au FocusLost * :wa
