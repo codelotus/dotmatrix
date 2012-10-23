@@ -6,6 +6,4 @@ you will need to compile macvim with the following options:
 ./configure --with-features=huge --enable-rubyinterp --with-macsdk=10.6 --with-macarchs=x86_64 --with-ruby-command=ruby
 this will use whatever rvm ruby is your --default
 
-Two things remain to be done...
-1) grok .hashrc and personalize
 
