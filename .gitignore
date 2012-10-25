@@ -2,3 +2,19 @@
 .vim/plugin/peepopen.vim
 *.un~
 .vimbundles
+*.class
+*.log
+
+# sbt specific
+.sbt/dist/*
+.sbt/*/target/
+.sbt/lib_managed/
+.sbt/src_managed/
+.sbt/project/boot/
+.sbt/project/plugins/project/
+.sbt/boot/
+.sbt/staging/
+
+
+# Scala-IDE specific
+.scala_dependencies
