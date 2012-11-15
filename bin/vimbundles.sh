@@ -58,7 +58,8 @@ get_github_bundle taq vim-rspec
 get_github_bundle wgibbs vim-irblack
 get_github_bundle scrooloose nerdtree
 # get_github_bundle sjbach lusty
-get_github_bundle hallettj jslint.vim
+# get_github_bundle hallettj jslint.vim
+get_github_bundle walm jshint.vim
 get_github_bundle kchmck vim-coffee-script
 get_github_bundle statianzo vim-jade
 get_github_bundle derekwyatt vim-scala
@@ -66,6 +67,7 @@ get_github_bundle derekwyatt vim-scala
 get_github_bundle kana vim-smartinput
 get_github_bundle Lokaltog vim-powerline
 get_github_bundle kien ctrlp.vim
+get_github_bundle mattn zencoding-vim
 
 # get_bitbucket_bundle ns9tks vim-l9
 # get_bitbucket_bundle ns9tks vim-fuzzyfinder
