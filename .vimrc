@@ -161,5 +161,5 @@ if filereadable(expand('~/.vimrc.local'))
 endif
 
 " Scalairform integration
-au BufEnter *.scala setl formatprg=scala\ -cp\ /Library/scala/HOME/tools/scalariform_2.9.0-0.1.1.jar\ scalariform.commandline.Main\ -f
+" au BufEnter *.scala setl formatprg=scala\ -cp\ /Library/scala/HOME/tools/scalariform_2.9.0-0.1.1.jar\ scalariform.commandline.Main\ -f
 
