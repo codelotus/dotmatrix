@@ -24,7 +24,7 @@ export CASE_SENSITIVE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rvm git node npm ssh-agent vi-mode rails)
+plugins=(git node npm ssh-agent vi-mode nvm)
 
 source $ZSH/oh-my-zsh.sh
 
