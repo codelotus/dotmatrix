@@ -4,9 +4,11 @@
 .vimbundles
 *.class
 *.log
+__init__.pyc
 
 # sbt specific
 .sbt/dist/*
+.sbt/other
 .sbt/*/target/
 .sbt/lib_managed/
 .sbt/src_managed/
@@ -14,6 +16,9 @@
 .sbt/project/plugins/project/
 .sbt/boot/
 .sbt/staging/
+.sbt/sbt.boot.lock
+.sbt/scala-2.10.*
+.sbt/scala-2.9.*
 
 
 # Scala-IDE specific

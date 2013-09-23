@@ -9,14 +9,15 @@ endif
 " execute WatchForChanges("*",autoreadargs)
 
 
-syntax on
+syntax enable
+set background=dark
 filetype plugin indent on
 " colorscheme vividchalk
 " colorscheme default
 " colorscheme evening
 " colorscheme inkpot
 " colorscheme topfunky-light
-colorscheme railscasts
+colorscheme solarized
 " this is vim, don't worry about compatability with vi
 set nocompatible
 set modelines=0

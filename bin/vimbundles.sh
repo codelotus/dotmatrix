@@ -68,6 +68,7 @@ get_github_bundle kana vim-smartinput
 get_github_bundle Lokaltog vim-powerline
 get_github_bundle kien ctrlp.vim
 get_github_bundle mattn zencoding-vim
+get_github_bundle altercation vim-colors-solarized
 
 # get_bitbucket_bundle ns9tks vim-l9
 # get_bitbucket_bundle ns9tks vim-fuzzyfinder
