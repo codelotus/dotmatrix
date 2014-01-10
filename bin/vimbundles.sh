@@ -70,6 +70,14 @@ get_github_bundle kien ctrlp.vim
 get_github_bundle mattn zencoding-vim
 get_github_bundle altercation vim-colors-solarized
 
+#snipmate
+get_github_bundle tomtom tlib_vim
+get_github_bundle MarcWeber vim-addon-mw-utils
+get_github_bundle garbas vim-snipmate
+
+get_github_bundle elixir-lang vim-elixir
+get_github_bundle carlosgaldino elixir-snippets
+
 # get_bitbucket_bundle ns9tks vim-l9
 # get_bitbucket_bundle ns9tks vim-fuzzyfinder
 

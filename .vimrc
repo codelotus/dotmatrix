@@ -101,6 +101,8 @@ vmap <C-Down> ]egv
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" json pretty formatting
+map <leader>jt  <Esc>:%!python -m json.tool<CR>
 
 " tab buffers
 nmap <leader>T :tabnew<CR>
